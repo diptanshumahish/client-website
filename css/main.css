@@ -393,6 +393,7 @@ footer {
 .mobMenuClass a {
     text-decoration: none;
     color: var(--backgroundColor);
+    width: 100%;
 }
 
 
