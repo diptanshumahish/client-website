@@ -32,6 +32,7 @@ function closeMenu() {
     document.getElementById("navigation").style.boxShadow = " rgba(100, 100, 111, 0.073) 0px 7px 29px 0px";
     document.getElementById("navigation").style.borderBottom = "unset";
     menuActive = false;
+    document.body.style.overflow = "scroll";
 }
 
 function preventScrol(e) {
