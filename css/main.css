@@ -386,8 +386,13 @@ footer {
 .mobMenuClass {
     border: 1px solid var(--backgroundColor);
     padding: 10px;
-    color: var(--backgroundColor);
+
     text-align: center;
+}
+
+.mobMenuClass a {
+    text-decoration: none;
+    color: var(--backgroundColor);
 }
 
 
