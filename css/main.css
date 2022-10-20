@@ -10,8 +10,8 @@
 
 :root {
     --textColor: #111;
-    --backgroundColor: rgb(244, 244, 244);
-    --themeBlue: rgb(45, 45, 71);
+    --backgroundColor: #f4f4f4;
+    --themeBlue: #2d2d47;
 }
 
 ::-webkit-scrollbar {
@@ -32,6 +32,12 @@ nav {
     align-items: center;
     background-color: white;
     box-shadow: rgba(100, 100, 111, 0.073) 0px 7px 29px 0px;
+    transition: all 300ms ease-in;
+}
+
+#menuButton:active {
+    transform: rotate(80deg);
+    transition: 100ms ease;
 }
 
 #menuButton i {
@@ -337,6 +343,44 @@ footer {
     padding: 20px;
 }
 
+/* monile menu  */
+#menuPageFull {
+    height: 100%;
+    width: 100%;
+    background-color: var(--themeBlue);
+    z-index: 100;
+    position: fixed;
+    top: 5%;
+    padding: 10%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    transform: translateX(-100vw);
+    transition: all 300ms ease-in;
+}
+
+
+
+#mobMenuHeading {
+    color: var(--backgroundColor);
+    font-size: 20px;
+}
+
+#mobMenuOption {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.mobMenuClass {
+    border: 1px solid var(--backgroundColor);
+    padding: 10px;
+    color: var(--backgroundColor);
+    text-align: center;
+}
 
 
 
